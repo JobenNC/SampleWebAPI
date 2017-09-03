@@ -14,7 +14,7 @@ namespace SampleWebAPI
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional } //Why is "Product" the default controller name?  It's the method name in ProductController.cs
             );
         }
     }
