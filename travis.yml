@@ -1,0 +1,10 @@
+language: csharp
+solution: ./SampleWebAPI.sln
+
+install:
+  - sudo apt-get install nunit-console
+  - nuget restore ./SampleWebAPI.sln
+
+script:
+  - xbuild ./SampleWebAPI.sln
+  - nunit-console ./SampleWebAPITests/bin/Debug/SampleWebAPITests.dll
