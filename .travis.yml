@@ -12,6 +12,9 @@ script:
   - xbuild ./SampleWebAPI.sln
   - nunit-console ./SampleWebAPITests/bin/Debug/SampleWebAPITests.dll
 
+before_deploy:
+  - gem update
+
 deploy:
   - provider: azure_web_apps
     #- username: "ci-user-1"
