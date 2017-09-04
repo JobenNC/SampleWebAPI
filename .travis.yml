@@ -11,6 +11,6 @@ script:
 
 deploy:
   - provider: azure_web_apps
-  - username: ci-user
+  - username: ci-user-1
   - password: PrecisionLender1
   - site: precisionlender-simplewebapi
