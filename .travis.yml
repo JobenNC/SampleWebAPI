@@ -3,6 +3,8 @@ solution: ./SampleWebAPI.sln
 
 install:
   - sudo apt-get install nunit-console
+  - sudo apt-get install npm
+  - sudo npm install -g azure-cli
   - nuget restore ./SampleWebAPI.sln
 
 script:
