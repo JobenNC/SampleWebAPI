@@ -1,6 +1,11 @@
 language: csharp
 solution: ./SampleWebAPI.sln
 
+env:
+  - AZURE_WA_USERNAME=ci-user-1
+  - AZURE_WA_PASSWORD=PrecisionLender1
+  - AZURE_WA_SITE=precisionlender-simplewebapi
+
 install:
   - sudo apt-get install nunit-console
   - nuget restore ./SampleWebAPI.sln
