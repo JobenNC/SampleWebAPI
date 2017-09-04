@@ -2,7 +2,7 @@ language: csharp
 solution: ./SampleWebAPI.sln
 
 env:
-  - AZURE_WA_USERNAME=ci-user-1 AZURE_WA_PASSWORD=PrecisionLender1 AZURE_WA_SITE=precisionlender-simplewebapi PROVIDER=azure_web_apps
+  - AZURE_WA_USERNAME=ci-user-1 AZURE_WA_PASSWORD=PrecisionLender1 AZURE_WA_SITE=precisionlender-simplewebapi
 
 install:
   - sudo apt-get install nunit-console
@@ -14,6 +14,6 @@ script:
 
 deploy:
   - provider: azure_web_apps
-  - username: "ci-user-1"
-  - password: "PrecisionLender1"
-  - site: "precisionlender-simplewebapi"
+    #- username: "ci-user-1"
+    #- password: "PrecisionLender1"
+    #- site: "precisionlender-simplewebapi"
